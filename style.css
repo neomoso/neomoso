@@ -1,60 +1,14 @@
+window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    document.querySelector(".line1").classList.add("visible");
+  }, 1000);  
 
+  setTimeout(() => {
+    document.querySelector(".line2").classList.add("visible");
+  }, 2000);  
 
-navbar-nav .nav-link {
-   
-  font-family: 'Roboto', sans-serif;
-}
-
-
-.navbar-nav .nav-link:hover {
-  
-  font-family: 'Roboto', sans-serif;
-}
- 
-
-
- 
-
- 
-
-
- 
- 
-a {
-  text-decoration: underline; /* underline by default */
-  color: black; /* optional: match parent text color */
-  transition: text-decoration 0.2s ease; /* smooth transition */
-}
-
-a:hover {
-  text-decoration: none; /* remove underline on hover */
-  color:black;
-}
-
-
-.image-wrapper {
-  background-color: #f7f7f7;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px; /* desktop default */
-  box-sizing: border-box;
-}
-
-/* 📱 On tablets and smaller */
-@media (max-width: 768px) {
-  .image-wrapper {
-    padding: 60px;
-  }
-}
-
-/* 📱📱 On small mobile devices */
-@media (max-width: 480px) {
-  .image-wrapper {
-    padding: 30px;
-  }
-}
-
- 
+  setTimeout(() => {
+    document.querySelector(".insta-link").classList.add("visible");
+    document.querySelector(".gallery-row").classList.add("visible");
+  }, 3500); 
+});
